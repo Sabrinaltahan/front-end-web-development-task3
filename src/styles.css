@@ -1,0 +1,154 @@
+.button {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #3498db;
+  color: #fff;
+}
+.button:hover {
+  background-color: #217dbb;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+header {
+  background-color: #3498db;
+  color: #fff;
+  padding: 20px 0;
+}
+header h1 {
+  font-size: 24px;
+  margin: 0;
+}
+header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+header nav ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+header nav ul li a:hover {
+  color: #ddd;
+}
+
+main {
+  padding: 40px 0;
+}
+main h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+main p {
+  line-height: 1.5;
+}
+main .banner {
+  background-image: url("img/banner.jpg");
+  background-size: cover;
+  color: #fff;
+  padding: 100px 0;
+  text-align: center;
+}
+main .services .service {
+  display: inline-block;
+  width: 30%;
+  margin: 0 1%;
+  vertical-align: top;
+}
+main .services .service img {
+  width: 100%;
+  height: auto;
+}
+main .services .service h3 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+@media screen and (max-width: 767px) {
+  main .services .service {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.testimonial-slider {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+}
+.testimonial-slider .container {
+  text-align: center;
+}
+.testimonial-slider .container h2 {
+  margin-bottom: 30px;
+}
+.testimonial-slider .container .slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+.testimonial-slider .container .slider .slide {
+  flex: 0 0 auto;
+  padding: 20px;
+  text-align: center;
+  display: none;
+}
+.testimonial-slider .container .slider .slide img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.testimonial-slider .container .slider .slide p {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+.testimonial-slider .container .slider .slide span {
+  font-weight: bold;
+}
+.testimonial-slider .container .slider .slide:first-child {
+  display: block;
+}
+
+.company-logo {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+:root {
+  --background-color: #ecf0f1;
+  --text-color: #2c3e50;
+}
+
+.dark {
+  --background-color: #34495e;
+  --text-color: #ecf0f1;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,45 +1,51 @@
 .button {
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
   cursor: pointer;
-  background-color: #3498db;
   color: #fff;
+  background-color: #3498db;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
 }
+
 .button:hover {
   background-color: #217dbb;
 }
 
 .container {
   width: 80%;
-  margin: 0 auto;
   max-width: 1200px;
+  margin: 0 auto;
 }
 
 header {
-  background-color: #3498db;
   color: #fff;
+  background-color: #3498db;
   padding: 20px 0;
 }
+
 header h1 {
-  font-size: 24px;
   margin: 0;
+  font-size: 24px;
 }
+
 header nav ul {
-  list-style-type: none;
+  text-align: center;
   margin: 0;
   padding: 0;
-  text-align: center;
+  list-style-type: none;
 }
+
 header nav ul li {
-  display: inline-block;
   margin-left: 20px;
+  display: inline-block;
 }
+
 header nav ul li a {
   color: #fff;
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: color .3s;
 }
+
 header nav ul li a:hover {
   color: #ddd;
 }
@@ -47,39 +53,46 @@ header nav ul li a:hover {
 main {
   padding: 40px 0;
 }
+
 main h2 {
-  font-size: 32px;
   margin-bottom: 20px;
+  font-size: 32px;
 }
+
 main p {
   line-height: 1.5;
 }
+
 main .banner {
-  background-image: url("img/banner.jpg");
-  background-size: cover;
   color: #fff;
-  padding: 100px 0;
   text-align: center;
+  background-image: url("banner.1009e17c.jpg");
+  background-size: cover;
+  padding: 100px 0;
 }
+
 main .services .service {
-  display: inline-block;
+  vertical-align: top;
   width: 30%;
   margin: 0 1%;
-  vertical-align: top;
+  display: inline-block;
 }
+
 main .services .service img {
   width: 100%;
   height: auto;
 }
+
 main .services .service h3 {
-  font-size: 20px;
   margin: 10px 0;
+  font-size: 20px;
 }
-@media screen and (max-width: 767px) {
+
+@media screen and (width <= 767px) {
   main .services .service {
-    display: block;
     width: 100%;
     margin-bottom: 20px;
+    display: block;
   }
 }
 
@@ -87,53 +100,61 @@ main .services .service h3 {
   background-color: #f9f9f9;
   padding: 50px 0;
 }
+
 .testimonial-slider .container {
   text-align: center;
 }
+
 .testimonial-slider .container h2 {
   margin-bottom: 30px;
 }
+
 .testimonial-slider .container .slider {
-  display: flex;
   justify-content: center;
   align-items: center;
+  display: flex;
   overflow-x: hidden;
 }
+
 .testimonial-slider .container .slider .slide {
-  flex: 0 0 auto;
-  padding: 20px;
   text-align: center;
+  flex: none;
+  padding: 20px;
   display: none;
 }
+
 .testimonial-slider .container .slider .slide img {
+  border-radius: 50%;
   width: 100px;
   height: 100px;
-  border-radius: 50%;
   margin-bottom: 20px;
 }
+
 .testimonial-slider .container .slider .slide p {
-  font-style: italic;
   margin-bottom: 10px;
+  font-style: italic;
 }
+
 .testimonial-slider .container .slider .slide span {
   font-weight: bold;
 }
+
 .testimonial-slider .container .slider .slide:first-child {
   display: block;
 }
 
 .company-logo {
-  display: block;
   max-width: 100%;
   height: auto;
   margin: 20px auto;
+  display: block;
 }
 
 footer {
-  background-color: #333;
   color: #fff;
-  padding: 20px 0;
   text-align: center;
+  background-color: #333;
+  padding: 20px 0;
 }
 
 :root {
@@ -151,4 +172,4 @@ body {
   color: var(--text-color);
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=index.4a508c1d.css.map */

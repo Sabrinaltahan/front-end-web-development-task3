@@ -1,34 +1,30 @@
-// Theme Partial
+// Theme Variables
 $dark-background: #34495e;
 $dark-text: #ecf0f1;
 $light-background: #ecf0f1;
 $light-text: #2c3e50;
 
-:root {
-    --background-color: #ecf0f1;
-    --text-color: #2c3e50;
-}
-
-body {
-    background-color: var(--background-color);
-    color: var(--text-color);
-}
-
 @media (prefers-color-scheme: dark) {
     :root {
-        --background-color: #34495e;
-        --text-color: #ecf0f1;
+        background-color: $dark-background;
+        color: $dark-text;
     }
 }
 
 @media (prefers-color-scheme: light) {
     :root {
-        --background-color: #ecf0f1;
-        --text-color: #2c3e50;
+        background-color: $light-background;
+        color: $light-text;
     }
 }
 
-.dark {
-    --background-color: #34495e;
-    --text-color: #ecf0f1;
+body.dark-mode {
+    background-color: $dark-background;
+    color: $dark-text;
 }
+
+body.light-mode {
+    background-color: $light-background;
+    color: $light-text;
+}
+

@@ -157,33 +157,28 @@ footer {
   padding: 20px 0;
 }
 
-:root {
-  --background-color: #ecf0f1;
-  --text-color: #2c3e50;
-}
-
-body {
-  background-color: var(--background-color);
-  color: var(--text-color);
-}
-
 @media (prefers-color-scheme: dark) {
   :root {
-    --background-color: #34495e;
-    --text-color: #ecf0f1;
+    color: #ecf0f1;
+    background-color: #34495e;
   }
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    --background-color: #ecf0f1;
-    --text-color: #2c3e50;
+    color: #2c3e50;
+    background-color: #ecf0f1;
   }
 }
 
-.dark {
-  --background-color: #34495e;
-  --text-color: #ecf0f1;
+body.dark-mode {
+  color: #ecf0f1;
+  background-color: #34495e;
+}
+
+body.light-mode {
+  color: #2c3e50;
+  background-color: #ecf0f1;
 }
 
 /*# sourceMappingURL=index.4a508c1d.css.map */

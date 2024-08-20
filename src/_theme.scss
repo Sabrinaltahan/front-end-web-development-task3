@@ -1,8 +1,8 @@
 // Theme Variables
-$dark-background: #34495e;
-$dark-text: #ecf0f1;
-$light-background: #ecf0f1;
-$light-text: #2c3e50;
+$dark-background: rgb(52, 73, 94);  // #34495e
+$dark-text: rgb(236, 240, 241);  // #ecf0f1
+$light-background: rgb(236, 240, 241);  // #ecf0f1
+$light-text: rgb(44, 62, 80);  // #2c3e50
 
 @media (prefers-color-scheme: dark) {
     :root {

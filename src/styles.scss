@@ -2,6 +2,7 @@
 $primary-color: #3498db;
 $secondary-color: #2ecc71;
 $text-color: #333;
+$theme: light;
 
 // Mixins
 @mixin button-style {
@@ -181,3 +182,22 @@ footer {
 
 // Include theme partial
 @import 'theme';
+
+
+// Conditional styles based on the theme variable
+@if $theme == light {
+    body {
+        background-color: $light-background;
+        color: $light-text;
+    }
+} @else if $theme == dark {
+    body {
+        background-color: $dark-background;
+        color: $dark-text;
+    }
+} @else {
+    body {
+        background-color: $light-background;
+        color: $light-text;
+    }
+}
